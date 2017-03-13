@@ -1,0 +1,57 @@
+body{
+	font-family:"Times New Roman";
+	font-size:0.8em;
+	font-weight:normal;
+	text-align:justify;
+	color:black;
+	background-color:black;
+	margin:0;
+	padding:0;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+hline{
+	font-family: arial;
+	font-size: 2em;
+	text-align:left;
+	font-weight:bold;
+	color:white;
+	background-color:#FF4500;
+	margin-left:1.5em;	
+	padding-top:1em;
+}
+shline{
+	font-family: arial;
+	font-size: 1em;
+	text-align:left;
+	font-weight:bold;
+	font-style:italic;
+	color:yellow;
+	background-color:#FF4500;
+	margin-left:3em;	
+	padding-bottom:1em;
+}
+img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+h4{
+	font-family: arial;
+	font-size: 80%;
+	text-align:left;
+	color:white;
+	background-color:blue;
+	margin:1em;
+	padding:0;
+	margin-left:0;
+}
+post{
+	font-weight:bold;
+	text-align:right;
+}
+intro{
+	margin-right:2em;
+}

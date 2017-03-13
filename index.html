@@ -1,0 +1,139 @@
+
+<html>
+<head>
+<link rel="stylesheet"
+		type="text/css"
+		href="./css/index.css"/>
+<link rel="stylesheet" href="./css/styles.css">
+   
+   <script src="./js/script.js"></script>
+<script language="JavaScript">
+<!--
+/*JavaScript Image slideshow:*/
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+//-->
+</script>
+</head>
+<body><center> 
+	<div id="container" style="width:100%;">		
+		<div id="header" style="background-color:#FF4500;text-align:left;">
+			<br>
+			<hline>
+				PEOPLE'S EDUCATION TRUST
+			</hline><br>
+			<shline>
+				educating, empowering and awakening the masses
+			</shline>
+			<br><br><hr>
+		</div>
+		<div id='cssmenu'>
+<ul>
+   <li><a href='#'>Home</a></li>
+   <li class='active'><a href='#'>Projects</a>
+      <ul>
+         <li><a href='#'>education</a>
+            <ul>
+               <li><a href='#'>school</a></li>
+               <li><a href='#'>post school</a></li>
+            </ul>
+         </li>
+         <li><a href='#'>livelihood</a>
+            <ul>
+               <li><a href='#'>job</a></li>
+               <li><a href='#'>business</a></li>
+            </ul>
+         </li>
+		 <li><a href='#'>awareness</a>
+            <ul>
+               <li><a href='#'>scientific</a></li>
+               <li><a href='#'>anti superstition</a></li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><a href='aboutus.html' target="main">About</a></li>
+   <li><a href='ourteam.html' target="main">Team</a></li>
+   <li><a href='contact.html' target="main">Contact</a></li>
+</ul>
+</div>
+		<marquee id='scroll_news' style="font-family:Book Antiqua; color: "blue" bgcolor="#FFFFCC" >
+			<div onMouseOver="document.getElementById('scroll_news').stop();" onMouseOut="document.getElementById('scroll_news').start();">
+				Workshop on Linux OS coming up soon. Register
+				<a href="https://docs.google.com/forms/d/1tSur3lXXtx_XtdDqMWAfgVaBJq00vnU6Tqnd61DyxTI/viewform?embedded=true" target="main">
+					here
+				</a>
+			</div>
+		</marquee>
+		
+		<div id="content1" style="background-color:#FFFFCC;width:55%;height:600;float:left">
+				<iframe name="main" src="aboutus.html" width="100%" height=100% frameborder="0" marginheight="0" marginwidth="0" scrolling=no>Loading...</iframe>
+		</div>	
+		<div id="content2" style="background-color:#FFFFCC;width:45%;height:600;float:left">
+				<a href="javascript:gotoshow()">
+					<img src="xxx.jpg" name="slide" border=0 width=95% height=50%>
+				</a>
+<script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("./asup/01.jpg","./asup/02.jpg","./asup/03.jpg","./asup/04.jpg","./asup/05.jpg","./asup/06.jpg","./asup/07.jpg","./asup/08.jpg","./asup/09.jpg","./asup/10.jpg","./asup/11.jpg","./asup/12.jpg","./asup/13.jpg","./asup/14.jpg")
+
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=3000
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+//-->
+
+</script>
+			<br><br><center>Anti Superstition Workshop</center>
+			
+		</div>
+		<div id="footer" style="background-color:#FFFFCC;">
+			copyright: Mohan Prakash
+		<h4>Share:</h4> 
+				<a href="https://facebook.com/sharer.php?u=http://www.petweb.in" target="_blank"><img src="./sns/facebook.png" height=25 width=25 alt="facebook"></a>
+
+				<a href="https://twitter.com/intent/tweet?url=http://www.petweb.in&text=Working%20for%20spread%20of%20real%20edication%20for%20the%20entire%20society%20#petweb" target="_blank"><img src="./sns/twitter.png" height=25 width=25 alt="twitter"></a>
+
+				<a href="https://plus.google.com/share?url=http://www.petweb.in" target="_blank"><img src="./sns/google.png" height=25 width=25 alt="google plus"></a></div>
+				
+		</div>
+		
+		</div>
+	</div>
+</body>
+</html>

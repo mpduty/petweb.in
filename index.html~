@@ -1,0 +1,109 @@
+<html>
+<head>
+<script language="JavaScript">
+<!--
+
+/*
+JavaScript Image slideshow:
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScript here!
+*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+
+//-->
+</script>
+</head>
+<body><center>
+	<div id="container" style="width:90%;">
+		<div id="header" align="left" style="background-color:#FF9999;">
+			<img style="margin-bottom:0;margin-top:6;margin-left:6;" src="logo.png" height=50 width=50>&nbsp&nbsp&nbsp
+			<line style="font-family:arial;color:white;font-size:2.5em;font-weight:bold;margin-bottom:4;">PEOPLE'S EDUCATION TRUST
+			</line>
+			<line style="font-family:helvetica;color:yellow;font-size:1em;font-weight:bold;font-style:italics;margin-bottom:4;">
+			educating, empowering and awakening the masses
+			</line>
+		</div>
+		<div id="announcements" style="background-color:#FFFFCC;">
+				<marquee>
+					<b><font size=4 color="blue">Workshop on Linux OS coming up soon. Register below</font></b>
+				</marquee>
+		</div>
+		<div id="menu" style="background-color:#FFFFCC;width:10%;height:100%;float:left;"><br><br><br><br>
+			<font size=2>
+					<a href="about.html">about us</a><br>
+					<a href="">our team</a><br>
+					<a href="">history</a><br>
+					<a href="">areas of work</a><br>
+					<a href="">projects</a><br>
+					<a href="">audit reports</a><br>
+					<a href="">transparency</a><br>
+					<a href="contact.html" target="main">contact us</a><br>
+				<br>
+				<div class="leader-half kids0514-share"><h4>Share:</h4> 
+				<a href="https://facebook.com/sharer.php?u=http://www.petweb.in" target="_blank"><img src="./sns/facebook.png" 						height=25 width=25 alt="facebook"></a><br> <br>
+
+				<a href="https://twitter.com/intent/tweet?url=http://www.petweb.in&text=Working%20for%20spread%20of%20real%20edication%20for%20the%20entire%20society%20#petweb" target="_blank"><img src="./sns/twitter.png" height=25 width=25 alt="twitter"></a> <br><br>
+
+				<a href="https://plus.google.com/share?url=http://www.petweb.in" target="_blank"><img src="./sns/google.png" 						height=25 width=25 alt="google plus"></a></div>
+				</font>
+		</div>
+		<div id="content1" style="background-color:#FFFFCC;width:40%;height:100%;float:left">
+				<iframe src="https://docs.google.com/forms/d/1tSur3lXXtx_XtdDqMWAfgVaBJq00vnU6Tqnd61DyxTI/viewform?embedded=true" width="100%" height="98%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</div>	
+		<div id="content2" style="background-color:#FFFFCC;width:50%;height:100%;float:left">
+				<a href="javascript:gotoshow()"><img src="food1.jpg" name="slide" border=0 width=95% height=70%></a>
+<script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("./asup/01.jpg","./asup/02.jpg","./asup/03.jpg","./asup/04.jpg","./asup/05.jpg","./asup/06.jpg","./asup/07.jpg","./asup/08.jpg","./asup/09.jpg","./asup/10.jpg","./asup/11.jpg","./asup/12.jpg","./asup/13.jpg","./asup/14.jpg")
+
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=3000
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+//-->
+
+</script>
+			<br><br><center>Anti Superstition Workshop</center>
+			
+			</div>
+	</div>
+</body>
+</html>
